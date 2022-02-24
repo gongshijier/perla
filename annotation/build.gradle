@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'kotlin'
+apply plugin: 'groovy'
+
+dependencies {
+    implementation 'com.squareup:javapoet:1.4.0'
+    implementation 'com.google.auto.service:auto-service:1.0-rc2'
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.41"
+    implementation 'com.google.auto:auto-common:0.10'
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+    implementation 'androidx.annotation:annotation:1.1.0'
+}
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
